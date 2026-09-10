@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f7f5;
+    color: #24332a;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background: #2f5d50;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav {
+    background: #1f4037;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    min-height: 380px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero div {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.button, button {
+    background: #2f5d50;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover, button:hover {
+    background: #1f4037;
+}
+
+.content {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.content section {
+    background: white;
+    padding: 22px;
+    margin-bottom: 22px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.info-box {
+    border-left: 5px solid #2f5d50 !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin: 15px 0 30px;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #dce9e4;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.photo {
+    cursor: pointer;
+}
+
+.photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.photo img:hover {
+    opacity: .8;
+}
+
+.photo-text {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-box {
+    max-width: 650px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font: inherit;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+#formMessage {
+    font-weight: bold;
+}
+
+iframe {
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    background: #1f4037;
+    color: white;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+    nav a {
+        margin: 5px 8px;
+    }
+
+    .hero {
+        min-height: 320px;
+        padding: 50px 25px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo img {
+        height: 240px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
