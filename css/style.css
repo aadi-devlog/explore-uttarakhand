@@ -49,7 +49,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
-        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80");
+        url("../images/hero_uttarakhand.jpg");
     background-size: cover;
     background-position: center;
     color: white;
