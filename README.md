@@ -1,158 +1,144 @@
-# Explore Uttarakhand
+Explore Uttarakhand
 
-## Project Title
+Final Web Development Project
 
-**Explore Uttarakhand – Tourism Website**
+Explore Uttarakhand is a responsive tourism website created as my final project for the 6-week web development internship. The project was developed to apply the concepts I learned in HTML, CSS, JavaScript, Git, and GitHub while creating a simple and interactive tourism website.
 
-## Project Objective
+Project Objective
 
-The objective of this project is to develop a responsive and interactive tourism website for exploring Uttarakhand. The website presents information about popular tourist destinations and provides a simple, user-friendly interface for visitors to explore places, learn about the project, and get in touch through the contact page.
+The main objective of this project is to provide users with a simple way to explore Uttarakhand and discover popular tourist destinations. The website focuses on responsive design, easy navigation, useful destination information, and meaningful JavaScript interactivity.
 
-This project demonstrates the web development concepts learned during the 6-week internship, including HTML, CSS, JavaScript, responsive design, DOM manipulation, events, and basic Git/GitHub workflow.
+Project Overview
 
-## Project Overview
+The website contains five main pages:
 
-**Explore Uttarakhand** is a multi-page tourism website designed to showcase the natural beauty, tourist attractions, and travel destinations of Uttarakhand, India.
+Home provides an introduction to Uttarakhand and the website.
+About provides information about Uttarakhand.
+Places contains tourist destinations and interactive features.
+Gallery displays images from different locations.
+Contact contains a contact form with validation.
 
-The website contains separate pages for the home section, tourist places, project information, and contact form. The layout is designed to work across desktop, tablet, and mobile screen sizes.
+The Places page is the main interactive section of the website. Destination information is stored in JavaScript using an array of objects and is displayed dynamically on the page.
 
-## Technologies Used
+Users can search for destinations using the search bar. The search can match the destination name, location, or activity. A location filter is also available to narrow down the results.
 
-* HTML5
-* CSS3
-* JavaScript
-* Git
-* GitHub
-* GitHub Pages
+The website includes a location-based recommendation feature. Recommendations are connected to their selected location so that users receive relevant tourist places instead of unrelated destinations. For example, selecting Dehradun can recommend local attractions such as Tapkeshwar Mahadev Temple, Robber's Cave (Gucchupani), Maldevta, and Sahastradhara.
 
-## Website Features
+Users can save and remove destinations from their favourites. Favourite places are stored using browser localStorage, so the saved information remains after refreshing the page.
 
-* Responsive website layout
-* Multi-page navigation
-* Tourist destination information
-* Attractive image-based content
-* CSS styling and responsive media queries
-* Flexbox and Grid layouts
-* Interactive JavaScript elements
-* DOM manipulation
-* Event handling
-* Contact form
-* Form validation
-* Mobile-friendly design
+The Gallery page includes an interactive lightbox for viewing images. The Contact page includes JavaScript form validation, including email validation, error messages, and a success message after valid submission. A back-to-top button and smooth scrolling are also included to improve navigation.
 
-## Project Structure
+Technologies Used
 
-```text
-explore-uttarakhand/
-│
-├── index.html
-├── places.html
-├── about.html
-├── contact.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-├── images/
-│   └── website images and assets
-│
-├── screenshots/
-│   └── project screenshots
-│
-└── README.md
-```
+HTML5
+Semantic HTML
+CSS3
+Box Model
+Flexbox
+CSS Grid
+Media Queries
+JavaScript
+Functions
+Arrays
+Objects
+DOM Manipulation
+Event Handling
+Form Validation
+localStorage
+Git
+GitHub
+GitHub Pages
+Main Features
 
-## Pages
+The main features of the website include responsive design for desktop, tablet, and mobile devices, multi-page navigation, tourist destination information, search and filtering, city-specific tourist recommendations, dynamic destination content, favourite destinations, localStorage support, an interactive gallery lightbox, contact form validation, a success message, a back-to-top button, smooth scrolling, and a mobile-friendly layout.
 
-### Home
+JavaScript Functionality
 
-The home page introduces Explore Uttarakhand and provides navigation to the main sections of the website.
+JavaScript is used throughout the website to make the project interactive.
 
-### Places
+The Places page uses an array of destination objects to store information about tourist places. JavaScript functions are used to search and filter destinations, generate content dynamically, update result counts, and recommend places based on the selected location.
 
-The places page showcases tourist destinations and attractions in Uttarakhand.
+Event listeners are used for search input, location filtering, buttons, favourite actions, gallery interaction, form submission, keyboard actions, and scrolling.
 
-### About
+The project also uses localStorage to save favourite destinations in the user's browser.
 
-The about page provides information about the purpose and concept of the project.
+This demonstrates the use of:
 
-### Contact
+Functions, Arrays, Objects, DOM Manipulation, Dynamic Content, Events, Search, Filtering, Form Validation, Browser Storage, and Interactive Buttons.
 
-The contact page allows users to enter their details and send a message through the website.
+Project Structure
 
-## Git & Version Control
+The project is organised into separate HTML, CSS, JavaScript, image, and screenshot folders. The main files are the five HTML pages, style.css, script.js, the image assets, screenshots, .gitignore, and README.md.
 
-Git was used to maintain the project and track changes throughout development.
+Git & Version Control
 
-Important Git commands used include:
+Git was used throughout the development of the project to track changes and maintain the project history.
 
-```bash
+Some of the Git commands used include:
+
 git init
 git status
 git add .
-git commit -m "Initial project setup"
+git commit
 git log
-git push
-```
+git push origin main
 
-Meaningful commit messages were used to document major development changes.
+Meaningful commit messages were used while developing and improving the website.
 
-## GitHub Repository
+GitHub Repository
 
-**Repository:**
-`https://github.com/aadi-devlog/explore-uttarakhand`
+https://github.com/aadi-devlog/explore-uttarakhand
 
+Live Website
 
-## Live Website
+https://aadi-devlog.github.io/explore-uttarakhand/
 
-**GitHub Pages:**
-`https://aadi-devlog.github.io/explore-uttarakhand/`
+Website Screenshots
 
+Screenshots of the completed project are included in the screenshots folder of the repository. They show the main pages and important features of the website.
 
-## Testing
+Challenges Faced
 
-The website was tested for:
+One of the main challenges was making the website responsive while keeping the layout consistent on desktop, tablet, and mobile devices.
 
-* Page navigation
-* Image loading
-* CSS styling
-* JavaScript functionality
-* Form behaviour
-* Responsive layout
-* Desktop, tablet, and mobile screen sizes
-* GitHub Pages deployment
+Another challenge was implementing JavaScript functionality without affecting the other pages. Since the same JavaScript file is used across different pages, the code had to be written carefully so that page-specific features only run when the required elements are available.
 
-## Challenges Faced
+Handling the destination data was another challenge. The search and recommendation features needed accurate location information so that a destination from one city was not incorrectly shown as belonging to another city.
 
-During development, challenges included maintaining correct file paths after organizing the project folders, creating a responsive layout for different screen sizes, and implementing interactive JavaScript features.
+Using Git and GitHub during development was also a learning experience, especially when managing commits, checking the project status, and pushing changes to the repository.
 
-## Solutions Implemented
+Solutions Implemented
 
-The project was organized into separate folders for CSS, JavaScript, images, and screenshots. Relative file paths were updated accordingly, media queries were used for responsive layouts, and JavaScript was used to add interactive behaviour and client-side functionality.
+CSS Grid and Flexbox were used to create flexible layouts, while media queries were added to adjust the design for different screen sizes.
 
-## Key Learnings
+For JavaScript, the destination information was organised using arrays and objects. Functions, event listeners, and DOM manipulation were used to create the search, filter, recommendation, favourite, gallery, and form-validation features.
 
-This project helped strengthen practical knowledge of HTML page structure, semantic HTML, CSS styling, Flexbox, Grid, responsive design, JavaScript, DOM manipulation, event handling, Git, GitHub, and website deployment using GitHub Pages.
+The recommendation system was organised according to location so that tourist places are suggested from the correct city.
 
-## Future Improvements
+The website was tested after making changes to identify errors and make sure the pages and interactive features continued to work correctly.
 
-Future versions of the project could include:
+Key Learnings
 
-* Online travel booking
-* Interactive maps
-* Weather information
-* Tourist reviews and ratings
-* More destination details
-* Backend/database integration
-* User accounts and personalized travel planning
+This project helped me understand how HTML, CSS, and JavaScript work together to create a complete website.
 
-## Author
+I improved my practical knowledge of semantic HTML, CSS styling, Box Model, Flexbox, Grid, media queries, JavaScript functions, arrays, objects, DOM manipulation, event handling, form validation, localStorage, and responsive design.
 
-**Aadi Devlog**
+I also learned how to use Git and GitHub for version control, maintain a proper project structure, debug problems, test a website, and deploy a project using GitHub Pages.
 
----
+Future Improvements
 
-© 2026 Explore Uttarakhand
+In the future, I would like to add interactive maps, weather information, more detailed destination pages, tourist reviews, travel itinerary planning, and backend/database support for saving complete travel plans.
+
+Additional features such as user accounts, trip planning, and more destination information could also make the website more useful.
+
+Author
+
+Aadi Devlog
+
+Project: Explore Uttarakhand
+
+GitHub Repository:
+https://github.com/aadi-devlog/explore-uttarakhand
+
+Live Website:
+https://aadi-devlog.github.io/explore-uttarakhand/

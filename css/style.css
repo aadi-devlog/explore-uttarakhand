@@ -206,3 +206,92 @@ footer {
         font-size: 14px;
     }
 }
+
+/* Interactive Places page */
+.place-controls {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 18px;
+    margin: 20px 0;
+}
+
+.place-controls label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.search-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 6px 0 12px;
+}
+
+.place-controls input,
+.place-controls select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.search-row input {
+    flex: 1;
+}
+
+.clear-search {
+    display: none;
+    margin: 0;
+    padding: 10px 14px;
+    background: #777;
+}
+
+.clear-search:hover {
+    background: #555;
+}
+
+.place-controls button {
+    margin-top: 4px;
+}
+
+.recommendation {
+    background: #eef6f1;
+    border-left: 4px solid #2f5d50;
+    padding: 10px 12px;
+    margin: 15px 0 8px;
+    border-radius: 4px;
+}
+
+.result-count {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.favorite-button {
+    white-space: nowrap;
+    padding: 7px 10px;
+}
+
+@media (max-width: 700px) {
+    .search-row {
+        align-items: stretch;
+    }
+
+    .clear-search {
+        padding: 10px 12px;
+    }
+
+    .favorite-button {
+        font-size: 13px;
+        padding: 7px 8px;
+    }
+}
